@@ -37,4 +37,7 @@ jobs:
       - name: Run a python script
         shell: python
         run: |
-          print('Hello, world!')
+          print(f'Package: {__package__}')
+          print(f'Name: {__name__}')
+          if __name__ == '__main__':
+            print('Hello, world!')
